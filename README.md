@@ -22,8 +22,12 @@ The service is using spring security with **basic auth** configuration (admin/ad
 
 ## Database design
 
-The service uses in-memory database to keep it simple and uses 3 tables ( **CUSTOMER, CUSTOMER_TRANSACTION, REWARD_POINTS** ). All tables has a **primary key** and **sequence** associated with it. Here the rewards are calculated and saved for every customer transactions.
+The service uses an in-memory database to keep it simple and uses 3 tables ( **CUSTOMER, CUSTOMER_TRANSACTION, REWARD_POINTS** ). All tables have a **primary key** and **sequence** associated with it. Here the rewards are calculated and saved for every customer transaction.
 
 ## Usage
 
-The service uses **HTTP** protocol with the endpoints exposed. A postman collection is included for convenience inside the **"resources/postman"** of this application.
+The service uses **HTTP** protocol with the endpoints exposed. 
+
+Api documents can be found with swagger endpoint **"http://{host}:{port}/swagger-ui/index.html"**
+
+A postman collection is included for convenience inside the **"resources/postman"** of this application.

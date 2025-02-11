@@ -20,6 +20,7 @@ public class SecurityConfig {
         http
             .authorizeHttpRequests((authz) -> authz
             		.requestMatchers("/h2-console/**").permitAll()
+            		.requestMatchers("/swagger-ui/**").permitAll()
                 .anyRequest().authenticated()
             )
             .csrf((csrf) -> csrf.disable())
